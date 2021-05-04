@@ -1,4 +1,4 @@
-# leetcode
+# My Leetcode Challenges
 I started learning to code in November on 2020. Why?! 
 
 * To get better
@@ -14,4 +14,4 @@ CodeWars - https://www.codewars.com
 Datacamp - https://www.datacamp.com
 
 
-These are a collection of LeetCode questions to ace the coding interview! - Created using [LeetHub](https://github.com/QasimWani/LeetHub).
+These are a collection of LeetCode questions to help me beeter embrace and become cofortable with coding languages! - Created using [LeetHub](https://github.com/QasimWani/LeetHub).
