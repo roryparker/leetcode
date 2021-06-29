@@ -1,12 +1,10 @@
 # My Leetcode Challenges
-I started learning to code in November on 2020. Why?! 
+After being rejected due to a skills gap, I've changed. I started learning to code in November on 2020. Why?! 
 
 * To get better.
 * To garner more respect.
 * To become an well rounded IT Pro.
 * To have the ability to build anything.
-
-And because a majority of all jobs will require some form of coding or scripting by 2022. Hell even my current job references SQL, HTML, and SOLR QUERY Language nearly every day.
 
 What am I using to learn? 
 
