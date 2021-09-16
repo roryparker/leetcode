@@ -11,26 +11,6 @@
  * @return {number[]}
  */
 
-
-// var inorderTraversal = function(root) {
-//     var stack = [],
-//         res = [];
-    
-//     while(true){
-//         if(root !== null){
-//             stack.push(root);
-//             root = root.left;
-//         }else{
-//             if(stack.length === 0) break;
-//             root = stack.pop();
-//             res.push(root.val);
-//             root = root.right;
-//         }
-//     }
-    
-//     return res;
-// };
-
 var inorderTraversal = function(root) { // anon function
     const stack = [], result = []; //create empty objects
     
