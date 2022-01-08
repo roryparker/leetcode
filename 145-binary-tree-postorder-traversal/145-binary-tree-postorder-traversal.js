@@ -17,9 +17,9 @@ var postorderTraversal = function(root) {
         if(!root)
             return null;
         
-        post(root.left)
-        post(root.right)
-        box.push(root.val)
+        post(root.left)           // Left Sub Tree Visit
+        post(root.right)          // Right Sub Tree Visit
+        box.push(root.val)        // Node Visit
     }
     
     post(root)
