@@ -6,19 +6,20 @@
 var findRestaurant = function(list1, list2) {
     let newStoredList = [], map = new Map(), min = Infinity;
     
-    for (let i = 0; i < list1.length; i++) {
-        map.set(list1[i], i);
-    }
+    list1.forEach((element, i) => (map.set(list1[i], i)));
+//     for (let i = 0; i < list1.length; i++) {
+//         map.set(list1[i], i);
+//     }
     
     for (let i = 0; i < list2.length; i++) {
         const menu = list2[i];
         
         if (map.has(menu)) {
-            const priority = map.get(menu) + i;
-            if (priority < min) {
-                min = priority;
+            const checkIfInMap = map.get(menu) + i;
+            if (checkIfInMap < min) {
+                min = checkIfInMap;
                 newStoredList = [menu];
-            } else if (priority === min) {
+            } else if (checkIfInMap === min) {
                 newStoredList.push(menu);
             }
         }
