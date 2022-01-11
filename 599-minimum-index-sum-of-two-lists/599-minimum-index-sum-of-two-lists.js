@@ -10,7 +10,7 @@ var findRestaurant = function(list1, list2) {
 //     for (let i = 0; i < list1.length; i++) {
 //         map.set(list1[i], i);
 //     }
-    // list2.forEach((element, i) => {menu = list2[i]})
+// list2.forEach(element) => (menu = list2[i]);
     for (let i = 0; i < list2.length; i++) {
         const menu = list2[i];
         
