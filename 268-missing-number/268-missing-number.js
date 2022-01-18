@@ -1,0 +1,14 @@
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var missingNumber = function(nums) {
+    let storage = nums.length;
+   
+    for ( let i = 0; i < nums.length; i++) {
+        storage = storage + (i - nums[i])
+    }
+    
+    console.log(storage)
+    return storage;
+};
