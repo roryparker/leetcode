@@ -5,7 +5,7 @@
 var missingNumber = function(nums) {
     let storage = nums.length;
    
-    for ( let i = 0; i < nums.length; i++) {
+    for (const i in nums) {
         storage = storage + (i - nums[i])
     }
     
