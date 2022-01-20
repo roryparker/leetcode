@@ -11,12 +11,4 @@ var findDuplicate = function(nums) {
     } 
     
     console.log(storage)
-    
-//     var findDuplicate = function(nums) {
-//     let has = {}
-//     for (let i = 0; i < nums.length; i++){
-//         if (has[nums[i]]) return nums[i]
-//         has[nums[i]] = true
-//     }
-// };
 };
