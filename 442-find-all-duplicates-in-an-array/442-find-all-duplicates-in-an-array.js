@@ -38,17 +38,34 @@
 //     return storage;
 // };
 
-var findDuplicates = function(nums) {
-    let storage = [];
+// var findDuplicates = function(nums) {
+//     let storage = [];
     
-    for (let i = 0; i < nums.length; i++) {
-        for (let j = i + 1; j < nums.length; j++) {
-            if (nums[i] === nums[j]) {
-                storage.push(nums[i]);
-            }
-        }
-    }
+//     for (let i = 0; i < nums.length; i++) {
+//         for (let j = i + 1; j < nums.length; j++) {
+//             if (nums[i] === nums[j]) {
+//                 storage.push(nums[i]);
+//             }
+//         }
+//     }
     
-    return storage;
+//     return storage;
 
-};
+// };
+
+function findDuplicates(nums) {
+
+  const duplicates = [];
+  const seen = {};
+
+  for (const item of nums) {
+    if (!seen[item]) {
+      seen[item] = 'found'
+    } else {
+      duplicates.push(item)
+    }
+  }
+
+  return duplicates
+}
+
