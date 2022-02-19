@@ -11,27 +11,23 @@
  * @return {number[]}
  */
 var averageOfLevels = function(root) {
-    // created answer storage, level of the tree, and started
-    let storage = [], currentTreeLevel = [root], letsContinue = true;
+    var res = [];
+    if(!root) return res;
+    var queue = [root];
     
-    // setup answer for average and floating point number
-    while (letsContinue) {
-        let child = [], sum = 0.0;
-        
-        // add up sum of current level and add children to 'next level' variable and traverse the array
-        for (let i = 0; i < currentTreeLevel.length; i++) {
-            let parent = currentTreeLevel[i];
-            sum = sum + parent.val;
-            if (parent.left) child.push(parent.left);
-            if (parent.right) child.push(parent.right);
+    while(queue.length) {
+        var size = queue.length;
+        var sum = 0;
+        for(let i = 0; i<size; i++) {
+            var head = queue.shift();
+            sum += head.val;
+            if(head.left) queue.push(head.left);
+            if(head.right) queue.push(head.right);
         }
+        res.push(sum/size);
         
-        let average = sum / currentTreeLevel.length; //Calculate the average
-        storage.push(average); //push average to storage
-        currentTreeLevel = child; // Switch to next level
-        letsContinue = currentTreeLevel.length > 0;
     }
+    return res;
+
     
-    console.log(storage)
-    return storage;
 };
