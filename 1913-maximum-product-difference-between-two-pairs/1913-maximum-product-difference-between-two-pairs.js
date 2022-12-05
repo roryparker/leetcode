@@ -10,7 +10,10 @@ var maxProductDifference = function(nums) {
     // Get the product of the two highest and lowest values.
     // Then subtract from the two lowest values.
     
-    const diff = nums.at(-1) * nums.at(-2) - nums.at(0) * nums.at(1);
+    const high = nums.at(-1) * nums.at(-2);
+    const low = nums.at(0) * nums.at(1);
+    
+    let diff = high - low;
     
     console.log(diff);
     return diff;
